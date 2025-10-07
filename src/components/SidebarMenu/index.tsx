@@ -64,7 +64,7 @@ const SidebarMenu = ({
   // Close on Escape key
   useEffect(() => {
     const handleEscape = (e: KeyboardEvent) => {
-      if (isOpen) {
+      if (e.key === "Escape" && isOpen) {
         onClose();
       }
     };
